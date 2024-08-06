@@ -1,0 +1,6 @@
+*.mp4
+*.jpg
+*.npy
+*.jpeg
+.DS_Store
+*_mask_*.png

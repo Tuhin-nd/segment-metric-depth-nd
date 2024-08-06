@@ -11,9 +11,9 @@ current_working_directory = os.getcwd()
 # depth_folder = os.path.join(current_working_directory, 'metric_depth_88641cb95a')
 # output_folder = os.path.join(current_working_directory, 'output_overlay_images')
 
-segmentation_folder = os.path.join(current_working_directory, 'segmentation_nuscenes_cam_front')
-depth_folder = os.path.join(current_working_directory, 'output_metric_depth_cam_front_nuscenes')
-output_folder = os.path.join(current_working_directory, 'output_overlay_images_nuscenes_cam_front')
+segmentation_folder = os.path.join(current_working_directory, 'segmentation_yvis_2021_tennis')
+depth_folder = os.path.join(current_working_directory, 'output_metric_depth_fb104c286f')
+output_folder = os.path.join(current_working_directory, 'output_overlay_images_fb104c286f')
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)

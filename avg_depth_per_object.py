@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 current_working_directory = os.getcwd()
 
 # Define the paths to the folders
-depth_folder = os.path.join(current_working_directory, 'output_metric_depth_cam_front_nuscenes')
-masks_folder = os.path.join(current_working_directory, 'output_with_masks_cam_front_nuscenes')
+depth_folder = os.path.join(current_working_directory, 'output_metric_depth_fb104c286f')
+masks_folder = os.path.join(current_working_directory, 'output_with_masks_fb104c286f')
 
 # List all depth files
 depth_files = sorted([f for f in os.listdir(depth_folder) if f.endswith('.npy')])
@@ -62,7 +62,7 @@ markers = ['o', 's', 'D', '^', 'v', '<', '>']
 line_styles = ['-', '--', '-.', ':', '-', '--', '-.']
 # object_id_map = {0: "Person 1", 1: "Bike", 2: "Person 2"}
 # object_id_map = {0: "Car 1", 1: "Car 2"}
-object_id_map = {0: "Car"}
+object_id_map = {0: "Player 0", 2 : "Player 2"}
 
 # Plot each object's depth series
 for idx, (object_id, depth_series) in enumerate(avg_depth_values.items()):
@@ -88,7 +88,7 @@ plt.title('Average Depth Value per Object over Frames', fontsize=16)
 plt.legend(fontsize=12)
 
 # Save the plot as an image
-plt.savefig('average_depth_per_object_nuscenes_cam_front.png', dpi=300, bbox_inches='tight')
+plt.savefig('average_depth_per_object_fb104c286f.png', dpi=300, bbox_inches='tight')
 
 # Show the plot
 plt.show()
